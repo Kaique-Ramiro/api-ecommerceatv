@@ -1,6 +1,6 @@
 package br.com.senai.api_ecommerce.cliente;
 
-import br.com.senai.api_ecommerce.endereco.DadosEndereco;
+import br.com.senai.api_ecommerce.endereco.DadosAtualizarEndereco;
 import jakarta.persistence.Column;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -21,6 +21,6 @@ public record DadosCadastroCliente(
         @Size(max = 20)
         String telefone,
 
-        @NotNull @Valid DadosEndereco endereco
+        @NotNull @Valid DadosAtualizarEndereco endereco
         ) {
 }
